@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 24 20% 95%;
+    --foreground: 20 14% 4%;
+    --primary: 47 43% 30%;
+    --primary-foreground: 47 43% 98%;
+  }
+  .dark {
+    --background: 20 14% 4%;
+    --foreground: 24 20% 95%;
+  }
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.ethereal-blur {
+    backdrop-filter: blur(40px);
+}
+
+.orb-glow-gold {
+    filter: drop-shadow(0 0 15px rgba(185, 167, 109, 0.4));
+}
+
+.orb-glow-blue {
+    filter: drop-shadow(0 0 15px rgba(104, 171, 255, 0.4));
+}
+
+.orb-glow-red {
+    filter: drop-shadow(0 0 15px rgba(172, 50, 45, 0.3));
+}
+
+.orb-glow-purple {
+    filter: drop-shadow(0 0 15px rgba(164, 201, 255, 0.4));
+}
+
+/* Horizon Hero Section Styles */
+.hero-container.cosmos-style {
+  background: radial-gradient(circle at 50% 50%, #0a0a0a 0%, #000000 100%);
+  color: #ffffff;
+}
+
+.hero-canvas {
+  filter: contrast(1.1) brightness(0.9);
+}
+
+.subtitle-line {
+  display: block;
+}
+
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}

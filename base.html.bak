@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pray, Don’t Prey | Faith &amp; Mental Health</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Inter:wght@400;500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#ac322d",
+                        "tertiary-fixed-dim": "#a4c9ff",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#32302b",
+                        "surface-container": "#f2ede5",
+                        "tertiary": "#0060ac",
+                        "on-error": "#ffffff",
+                        "primary-container": "#b9a76d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1d1c17",
+                        "on-surface-variant": "#4b463a",
+                        "on-primary-fixed-variant": "#534616",
+                        "surface-variant": "#e7e2da",
+                        "on-background": "#1d1c17",
+                        "on-primary-fixed": "#231b00",
+                        "background": "#fef9f1",
+                        "secondary-container": "#fe6d62",
+                        "on-tertiary-container": "#003e73",
+                        "surface-tint": "#6c5d2b",
+                        "on-error-container": "#93000a",
+                        "outline": "#7c7769",
+                        "primary": "#6c5d2b",
+                        "tertiary-fixed": "#d4e3ff",
+                        "on-tertiary-fixed": "#001c39",
+                        "on-secondary-fixed-variant": "#8b1918",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#d9c689",
+                        "tertiary-container": "#68abff",
+                        "surface-container-low": "#f8f3eb",
+                        "surface-dim": "#ded9d2",
+                        "surface-bright": "#fef9f1",
+                        "on-secondary-fixed": "#410002",
+                        "surface-container-high": "#ece8e0",
+                        "on-primary-container": "#483c0c",
+                        "primary-fixed": "#f6e1a2",
+                        "secondary-fixed": "#ffdad6",
+                        "on-secondary-container": "#6d0007",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#004883",
+                        "outline-variant": "#cdc6b6",
+                        "surface-container-highest": "#e7e2da",
+                        "inverse-on-surface": "#f5f0e8",
+                        "inverse-primary": "#d9c689",
+                        "secondary-fixed-dim": "#ffb4ac",
+                        "surface": "#fef9f1",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .ethereal-blur {
+            backdrop-filter: blur(40px);
+        }
+
+        .orb-glow-gold {
+            filter: drop-shadow(0 0 15px rgba(185, 167, 109, 0.4));
+        }
+
+        .orb-glow-blue {
+            filter: drop-shadow(0 0 15px rgba(104, 171, 255, 0.4));
+        }
+
+        .orb-glow-red {
+            filter: drop-shadow(0 0 15px rgba(172, 50, 45, 0.3));
+        }
+
+        .orb-glow-purple {
+            filter: drop-shadow(0 0 15px rgba(164, 201, 255, 0.4));
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-white/70 dark:bg-stone-950/70 backdrop-blur-xl text-stone-800 dark:text-stone-100 font-plus-jakarta text-sm tracking-wide docked full-width top-0 sticky z-50 no-line tonal shift flat no shadows">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <div class="text-xl font-bold tracking-tighter text-stone-900 dark:text-stone-50">Pray, Don’t Prey</div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-100 transition-colors"
+                    href="#">Faith</a>
+                <a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-100 transition-colors"
+                    href="#">Mental Health</a>
+                <a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-100 transition-colors"
+                    href="#">Resources</a>
+                <a class="text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-100 transition-colors"
+                    href="#">The Trap</a>
+            </div>
+            <button
+                class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full font-semibold hover:opacity-90 transition-all">
+                Get Support
+            </button>
+        </div>
+    </nav>
+    <main>
+        <!-- Hero Section: Interactive Emotion Release -->
+        <section
+            class="relative min-h-[921px] flex flex-col items-center justify-center overflow-hidden px-6 pt-12 pb-24">
+            <!-- Ethereal Light Leaks -->
+            <div
+                class="absolute top-[-10%] left-[-10%] w-[60%] h-[60%] bg-tertiary-fixed opacity-30 rounded-full blur-[120px]">
+            </div>
+            <div
+                class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-secondary-fixed opacity-20 rounded-full blur-[120px]">
+            </div>
+            <div class="relative z-10 text-center max-w-3xl mb-16">
+                <h1
+                    class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-6 leading-tight">
+                    Faith is not <br /><span class="text-primary italic">a performance.</span>
+                </h1>
+                <p class="text-on-surface-variant text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
+                    How are you feeling today?
+                </p>
+            </div>
+            <!-- Emotion Release Interface -->
+            <div class="relative z-10 w-full max-w-4xl mx-auto">
+                <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+                    <!-- Sadness Orb -->
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="w-24 h-24 md:w-32 md:h-32 bg-tertiary-container/30 border border-white/40 rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform duration-500 orb-glow-blue relative">
+                            <span class="material-symbols-outlined text-tertiary text-4xl"
+                                data-icon="sentiment_dissatisfied">sentiment_dissatisfied</span>
+                            <div
+                                class="absolute inset-0 bg-white/10 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </div>
+                        <span
+                            class="font-label text-on-surface-variant text-sm tracking-widest uppercase font-semibold">Sadness</span>
+                    </div>
+                    <!-- Fear Orb -->
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="w-24 h-24 md:w-32 md:h-32 bg-surface-container-highest/50 border border-white/40 rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform duration-500 orb-glow-purple relative">
+                            <span class="material-symbols-outlined text-on-surface-variant text-4xl"
+                                data-icon="warning">warning</span>
+                        </div>
+                        <span
+                            class="font-label text-on-surface-variant text-sm tracking-widest uppercase font-semibold">Fear</span>
+                    </div>
+                    <!-- Joy Orb -->
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="w-24 h-24 md:w-32 md:h-32 bg-primary-fixed border border-white/40 rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform duration-500 orb-glow-gold relative">
+                            <span class="material-symbols-outlined text-on-primary-fixed-variant text-4xl"
+                                data-icon="auto_awesome">auto_awesome</span>
+                        </div>
+                        <span
+                            class="font-label text-on-surface-variant text-sm tracking-widest uppercase font-semibold">Joy</span>
+                    </div>
+                    <!-- Anger Orb -->
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="w-24 h-24 md:w-32 md:h-32 bg-secondary-fixed-dim/40 border border-white/40 rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform duration-500 orb-glow-red relative">
+                            <span class="material-symbols-outlined text-secondary text-4xl" data-icon="bolt">bolt</span>
+                        </div>
+                        <span
+                            class="font-label text-on-surface-variant text-sm tracking-widest uppercase font-semibold">Anger</span>
+                    </div>
+                    <!-- Disgust Orb -->
+                    <div class="flex flex-col items-center gap-4 group">
+                        <div
+                            class="w-24 h-24 md:w-32 md:h-32 bg-surface-variant/60 border border-white/40 rounded-full flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform duration-500 relative">
+                            <span class="material-symbols-outlined text-outline text-4xl" data-icon="masks">masks</span>
+                        </div>
+                        <span
+                            class="font-label text-on-surface-variant text-sm tracking-widest uppercase font-semibold">Disgust</span>
+                    </div>
+                </div>
+                <div class="mt-20 text-center">
+                    <p class="text-on-surface-variant/60 font-label italic text-sm tracking-wide">
+                        Click your emotion orb · Hold and drag upward to release it to God
+                    </p>
+                    <div class="mt-6 flex justify-center">
+                        <div class="w-px h-16 bg-gradient-to-b from-primary/40 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 1: The Myth of Perfect Faith -->
+        <section class="py-32 px-6 bg-surface-container-low relative overflow-hidden">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 lg:gap-24">
+                <div class="w-full md:w-1/2 relative group">
+                    <div
+                        class="absolute -inset-4 bg-primary-fixed/20 blur-3xl opacity-50 group-hover:opacity-70 transition-opacity">
+                    </div>
+                    <img alt="Supportive spiritual guidance"
+                        class="relative rounded-lg w-full aspect-[4/5] object-cover shadow-2xl"
+                        data-alt="a serene person standing amidst soft golden light and ethereal white clouds looking upward with an expression of peace and surrender"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvU7NRA7Zs4K0A_CfqBioQJdihxuTVrRFWHCWuyW6oJQ9v_eDOZOXqwpoyloGX5xwEAMzWhsmpOd3ApnkWr0kMPISMCQoLBWMbL-bm55Xt4OPDSClShC_-7c84bIe0Jibh5ttQONFp-eZLIbQRcheBJob8OecnbkEVVbI7yL-mrKpQRIwUUxzQ1suD-vGhklSy5GxDOcM7_XHXGhIxu2SYe4GXuXj6vY2yUs9j4wOntAskKM2bnlHaodvvUL18nPsuZten9NVOu6wX" />
+                    <div
+                        class="absolute -bottom-8 -right-8 bg-surface-bright/80 p-8 rounded-xl ethereal-blur shadow-lg max-w-xs hidden lg:block">
+                        <p class="font-headline font-semibold text-primary mb-2">The Prayer Gap</p>
+                        <p class="text-on-surface-variant text-sm leading-relaxed italic">"It is not a lack of faith
+                            that brings the darkness; it is the human condition meeting the divine grace."</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <span
+                        class="font-label text-primary font-bold tracking-[0.2em] uppercase text-xs mb-6 block">Deconstructing
+                        Performance</span>
+                    <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-on-surface mb-8 leading-tight">The
+                        Myth of Perfect Faith</h2>
+                    <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+                        <p>For too long, the sanctuary has been a stage where we feel compelled to perform 'victory'
+                            while drowning in the silent depths of depression and anxiety.</p>
+                        <p>We’ve been told that a strong prayer life is the only medicine required, turning mental
+                            health struggles into a source of spiritual shame. This is the trap: believing that your
+                            struggle is a sign of your failure.</p>
+                        <div class="pt-6">
+                            <button
+                                class="flex items-center gap-3 text-primary font-bold hover:gap-5 transition-all group">
+                                Read our manifesto
+                                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 2: Mental Health in the Sanctuary -->
+        <section class="py-32 px-6 bg-background relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20">
+                    <h2 class="font-headline text-4xl md:text-5xl font-extrabold text-on-surface mb-6">Mental Health in
+                        the Sanctuary</h2>
+                    <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Finding safe spaces where faith and
+                        science coexist, where your spirit and mind are nurtured as one.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Bento Card 1 -->
+                    <div
+                        class="md:col-span-2 bg-surface-container-high rounded-lg p-10 flex flex-col justify-between group overflow-hidden relative min-h-[400px]">
+                        <div class="relative z-10">
+                            <div
+                                class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm">
+                                <span class="material-symbols-outlined text-tertiary" data-icon="groups">groups</span>
+                            </div>
+                            <h3 class="font-headline text-2xl font-bold mb-4">Empathetic Communities</h3>
+                            <p class="text-on-surface-variant leading-relaxed max-w-md">Discover faith communities that
+                                have moved beyond the 'just pray it away' rhetoric to offer real, trauma-informed
+                                support systems.</p>
+                        </div>
+                        <img alt="A group session in a sanctuary"
+                            class="absolute bottom-0 right-0 w-1/2 h-full object-cover opacity-20 group-hover:opacity-40 transition-opacity rounded-l-3xl"
+                            data-alt="a diverse group of people sitting in a circle in a sun-drenched church hall, talking and holding hands in a supportive manner"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcbCMGNLmpB48iP_a-aITKtNmh8cVZKB4Bjo1GibDZ_Il9WgKy0L5rcCzpXSF-YQrM8Dz5_rre-fFRNDC3x8pratV-Zg65x1XRK4JDi_Tuuaq5XnKLD2fi1PYKShqq1xPo4W7YU6pxCsl4CWpBPYv3nC6gxLE7O8nWqVaFDDl_GTHOiscBsOAPHu8DwVxXDSx-8UYa47LWSdsw8GGnzx57upHPxvKxgIReP2wkhdWoLC7BEJzTTwh_KDAY_zFjQdueYz55-daod4yi" />
+                    </div>
+                    <!-- Bento Card 2 -->
+                    <div
+                        class="bg-primary-fixed/30 rounded-lg p-10 flex flex-col justify-between border border-primary-container/20">
+                        <div>
+                            <div
+                                class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-6 shadow-sm">
+                                <span class="material-symbols-outlined text-primary"
+                                    data-icon="auto_stories">auto_stories</span>
+                            </div>
+                            <h3 class="font-headline text-2xl font-bold mb-4">Scripture &amp; Science</h3>
+                            <p class="text-on-surface-variant text-sm leading-relaxed">Resources that bridge the gap
+                                between spiritual truth and psychological understanding.</p>
+                        </div>
+                        <a class="mt-8 inline-flex items-center font-bold text-on-primary-fixed-variant" href="#">Learn
+                            more <span class="material-symbols-outlined ml-2 text-sm"
+                                data-icon="open_in_new">open_in_new</span></a>
+                    </div>
+                    <!-- Bento Card 3 -->
+                    <div
+                        class="bg-surface-container-lowest border border-outline-variant/30 rounded-lg p-10 flex flex-col justify-center text-center items-center">
+                        <div
+                            class="w-20 h-20 bg-tertiary-fixed rounded-full flex items-center justify-center mb-6 orb-glow-blue">
+                            <span class="material-symbols-outlined text-tertiary text-4xl" data-icon="spa"
+                                style="font-variation-settings: 'FILL' 1;">spa</span>
+                        </div>
+                        <h3 class="font-headline text-xl font-bold mb-2">The Breath Guide</h3>
+                        <p class="text-on-surface-variant text-sm mb-6">Daily guided meditations for spiritual
+                            weightlessness.</p>
+                        <button
+                            class="bg-on-surface text-surface py-3 px-8 rounded-full text-sm font-bold w-full hover:bg-on-surface-variant transition-colors">Start
+                            Guide</button>
+                    </div>
+                    <!-- Bento Card 4 -->
+                    <div
+                        class="md:col-span-2 bg-inverse-surface rounded-lg p-10 text-inverse-on-surface flex flex-col md:flex-row items-center gap-12">
+                        <div class="flex-1">
+                            <h3 class="font-headline text-3xl font-bold mb-4 text-primary-fixed">Clinical Partners</h3>
+                            <p class="opacity-80 leading-relaxed mb-6">We maintain a curated network of therapists who
+                                understand the weight of faith-based trauma and the importance of spiritual identity.
+                            </p>
+                            <div class="flex gap-4">
+                                <span
+                                    class="px-4 py-1.5 bg-white/10 rounded-full text-xs font-label">Trauma-Informed</span>
+                                <span
+                                    class="px-4 py-1.5 bg-white/10 rounded-full text-xs font-label">Faith-Sensitive</span>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img alt="Professional consultation"
+                                class="w-32 h-32 rounded-full object-cover border-4 border-primary-fixed/20"
+                                data-alt="close up of two hands held together in a gesture of empathy and clinical support, bright and clean medical background"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbFC4Sb0_ICzEe6iViXY3yRcaaKObNsHhmEkN8X1GxZF-Vl-0TcUJM3WpMvBRrpNRI4Q7oe5kTuRRTBqYwKaUiu3-x1ts3GuHV0JZiujv5ohFBge8dqf1lxIQ3QP46jVPgP3BXodc_kINV7VVgeAP4Yu2y6UMvkV6rqTj-JcMV00pxhylo2749ufaMFMXjduNa8GNcM6A3aWecYqDdMptqcToCja0XWZK86kXKO9DEj17IZiJui8MYubKUz3OhypPQ76eG4jccKPZe" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 3: Break the Trap (CTA) -->
+        <section class="py-32 px-6 relative">
+            <!-- Background Cloud Decoration -->
+            <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+                <div
+                    class="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-surface-container-low to-transparent">
+                </div>
+                <div
+                    class="absolute top-1/2 left-1/4 w-[800px] h-[800px] bg-primary-fixed/10 rounded-full blur-[140px]">
+                </div>
+            </div>
+            <div class="max-w-4xl mx-auto relative z-10 text-center">
+                <div
+                    class="inline-block px-4 py-1 bg-secondary-container/10 border border-secondary/20 rounded-full text-secondary font-label text-xs font-bold uppercase tracking-widest mb-8">
+                    Take Action</div>
+                <h2 class="font-headline text-5xl md:text-6xl font-extrabold text-on-surface mb-8">Break the Trap</h2>
+                <p class="text-on-surface-variant text-xl leading-relaxed mb-12">
+                    Your mental health journey doesn't require a spiritual disclaimer. Join a community of thousands who
+                    are redefining what it means to be faithful while being human.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <button
+                        class="bg-primary text-on-primary text-lg font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all">
+                        Find a Local Support Hub
+                    </button>
+                    <button
+                        class="bg-surface-container-highest text-on-surface text-lg font-bold py-4 px-10 rounded-full hover:bg-surface-variant transition-all">
+                        Crisis Resources
+                    </button>
+                </div>
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-40">
+                    <div class="flex flex-col items-center">
+                        <span class="text-3xl font-headline font-bold">12k+</span>
+                        <span class="text-xs font-label">Lives Touched</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-3xl font-headline font-bold">450+</span>
+                        <span class="text-xs font-label">Partner Churches</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-3xl font-headline font-bold">1.2M</span>
+                        <span class="text-xs font-label">Prayers Shared</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-3xl font-headline font-bold">24/7</span>
+                        <span class="text-xs font-label">Global Access</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-stone-50 dark:bg-stone-900 text-stone-600 dark:text-stone-400 font-be-vietnam text-xs leading-relaxed full-width mt-24 tonal shift from surface to surface-container-low flat no shadows">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full text-center md:text-left gap-8 max-w-7xl mx-auto">
+            <div class="max-w-sm">
+                <div class="font-plus-jakarta font-semibold text-stone-800 dark:text-stone-200 text-lg mb-4">Pray, Don’t
+                    Prey</div>
+                <p>© 2024 Celestial Sanctuary. A space for spiritual weightlessness and empathetic calm.</p>
+            </div>
+            <div class="flex flex-wrap justify-center md:justify-end gap-x-8 gap-y-4">
+                <a class="text-stone-500 dark:text-stone-500 hover:text-stone-800 dark:hover:text-stone-300 underline transition-all"
+                    href="#">Privacy Policy</a>
+                <a class="text-stone-500 dark:text-stone-500 hover:text-stone-800 dark:hover:text-stone-300 underline transition-all"
+                    href="#">Contact Us</a>
+                <a class="text-stone-500 dark:text-stone-500 hover:text-stone-800 dark:hover:text-stone-300 underline transition-all"
+                    href="#">Crisis Resources</a>
+                <a class="text-stone-500 dark:text-stone-500 hover:text-stone-800 dark:hover:text-stone-300 underline transition-all"
+                    href="#">Spiritual Guidance</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
