@@ -86,30 +86,35 @@ const Hero: React.FC = () => {
     };
 
     return (
-        <section id="hero" className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden px-6 pt-24 pb-32 bg-stone-50">
-            <div className="absolute top-0 w-full h-1/2 bg-gradient-to-b from-stone-200/20 to-transparent pointer-events-none"></div>
+        <section id="hero" className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden px-6 pt-24 pb-32 bg-[#0d041a] bg-gradient-to-br from-[#0d041a] via-purple-900 to-[#0d041a]">
+            {/* Glowing orbs animated in the background */}
+            <div className="absolute top-0 w-full h-full pointer-events-none opacity-40">
+                <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-joy rounded-full blur-[120px] mix-blend-screen opacity-30"></div>
+                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-sadness rounded-full blur-[120px] mix-blend-screen opacity-30"></div>
+                <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-fear rounded-full blur-[120px] mix-blend-screen opacity-20"></div>
+            </div>
             
             <div ref={textRef} className="relative z-10 text-center max-w-5xl mb-24 space-y-12">
                 <div className="space-y-4">
 
-                    <h1 className="font-headline text-5xl md:text-8xl font-black tracking-tighter text-stone-950 leading-[0.9]">
+                    <h1 className="font-headline text-5xl md:text-8xl font-black tracking-tighter text-white leading-[0.9] drop-shadow-2xl">
                         Inside Faith:<br />
-                        <span className="text-primary italic underline decoration-primary/30 underline-offset-[16px]">The Mind Within</span>
+                        <span className="inline-block pr-4 pb-4 text-transparent bg-clip-text bg-gradient-to-r from-joy via-[#FF9A9E] to-sadness italic underline decoration-joy/50 underline-offset-[16px] drop-shadow-[0_0_20px_rgba(253,228,127,0.4)]">The Mind Within</span>
                     </h1>
                 </div>
                 
                 <div className="space-y-6">
-                    <p className="text-stone-900 text-2xl md:text-4xl font-black tracking-tight max-w-3xl mx-auto leading-tight">
+                    <p className="text-purple-50 text-2xl md:text-4xl font-black tracking-tight max-w-3xl mx-auto leading-tight drop-shadow-md">
                         This safe place is for you. In a world filled with pressure, expectations, and silent struggles—you are allowed to simply be.
                     </p>
-                    <p className="text-stone-700 text-lg md:text-xl font-bold max-w-2xl mx-auto leading-relaxed border-l-4 border-primary/40 pl-8 text-left">
-                        <span className="text-primary uppercase tracking-widest text-xs font-black block mb-2">Context</span>
+                    <p className="text-purple-200 text-lg md:text-xl font-bold max-w-2xl mx-auto leading-relaxed border-l-4 border-joy/60 pl-8 text-left">
+                        <span className="text-joy uppercase tracking-widest text-xs font-black block mb-2 drop-shadow-sm">Context</span>
                         Many young Christians live a double life, appearing to be "perfect" in faith while silently struggling within.
                     </p>
                 </div>
 
-                <div className="pt-12 border-t border-stone-200 max-w-2xl mx-auto">
-                    <p className="text-stone-500 font-label italic text-base md:text-lg leading-relaxed font-bold">
+                <div className="pt-12 border-t border-purple-800/50 max-w-2xl mx-auto">
+                    <p className="text-purple-300 font-label italic text-base md:text-lg leading-relaxed font-bold">
                         Release your emotions to God. Click the orbs below.
                     </p>
                 </div>

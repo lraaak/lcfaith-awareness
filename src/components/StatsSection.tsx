@@ -13,24 +13,24 @@ const StatsSection: React.FC = () => {
             label: "Emotional Distress",
             context: "Filipino youth experienced deep emotional distress or felt life was not worth living (NYC, 2015).",
             icon: "sentiment_very_dissatisfied",
-            color: "text-rose-700",
-            bg: "bg-rose-50"
+            color: "text-red-400",
+            bg: "bg-red-900/50"
         },
         {
             value: "33%",
             label: "Increase in Perfectionism",
             context: "Socially prescribed perfectionism—the belief that others will only value you if you are perfect (Curran & Hill, 2019).",
             icon: "trending_up",
-            color: "text-orange-800",
-            bg: "bg-orange-50"
+            color: "text-red-400",
+            bg: "bg-red-900/50"
         },
         {
             value: "97.4%",
             label: "Religious Importance",
             context: "Filipino Catholic youth consider religion important, highlighting the hidden crisis of faith performance (NYC, 2015).",
             icon: "church",
-            color: "text-stone-950",
-            bg: "bg-stone-100"
+            color: "text-red-400",
+            bg: "bg-red-900/50"
         }
     ];
 
@@ -60,11 +60,11 @@ const StatsSection: React.FC = () => {
     }, []);
 
     return (
-        <section id="stats" className="py-32 px-6 bg-white relative overflow-hidden min-h-[600px]">
+        <section id="stats" className="py-32 px-6 bg-red-950 relative overflow-hidden min-h-[600px] border-t border-red-900/40">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-24 space-y-4">
-                    <h2 className="font-headline text-5xl md:text-7xl font-black text-stone-900 leading-none">Why This Matters</h2>
-                    <p className="text-stone-700 text-lg md:text-xl max-w-2xl mx-auto font-bold italic">
+                    <h2 className="font-headline text-5xl md:text-7xl font-black text-red-50 leading-none">Why This Matters</h2>
+                    <p className="text-red-200 text-lg md:text-xl max-w-2xl mx-auto font-bold italic">
                         The data behind the hidden crisis of performance in the sanctuary.
                     </p>
                 </div>
@@ -74,15 +74,15 @@ const StatsSection: React.FC = () => {
                         <div 
                             key={index} 
                             ref={(el) => { if (el) cardsRef.current[index] = el; }}
-                            className={`${stat.bg} rounded-3xl p-10 flex flex-col items-center text-center space-y-6 shadow-2xl shadow-stone-200/50 border border-stone-200/50 hover:scale-[1.03] transition-transform duration-500`}
+                            className={`${stat.bg} rounded-3xl p-10 flex flex-col items-center text-center space-y-6 shadow-2xl shadow-red-950/80 border border-red-800 hover:scale-[1.03] transition-transform duration-500`}
                         >
-                            <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg">
+                            <div className="w-20 h-20 bg-red-950 rounded-2xl flex items-center justify-center shadow-lg border border-red-900">
                                 <span className={`material-symbols-outlined ${stat.color} text-4xl`}>{stat.icon}</span>
                             </div>
                             <div className="space-y-4">
                                 <h3 className={`font-headline text-6xl font-black ${stat.color}`}>{stat.value}</h3>
-                                <p className="font-black text-stone-900 text-lg uppercase tracking-widest">{stat.label}</p>
-                                <p className="text-stone-800 text-base font-medium leading-relaxed">{stat.context}</p>
+                                <p className="font-black text-red-50 text-lg uppercase tracking-widest">{stat.label}</p>
+                                <p className="text-red-200 text-base font-medium leading-relaxed">{stat.context}</p>
                             </div>
                         </div>
                     ))}

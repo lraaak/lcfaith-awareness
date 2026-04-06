@@ -6,8 +6,8 @@
   :root {
     --background: 24 20% 95%;
     --foreground: 20 14% 4%;
-    --primary: 47 43% 30%;
-    --primary-foreground: 47 43% 98%;
+    --primary: 48 96% 74%;
+    --primary-foreground: 48 96% 15%;
   }
   .dark {
     --background: 20 14% 4%;

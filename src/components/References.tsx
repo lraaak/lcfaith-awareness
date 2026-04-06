@@ -29,24 +29,24 @@ const References: React.FC = () => {
     ];
 
     return (
-        <section id="references" className="py-32 px-6 bg-stone-50 border-t border-stone-200/40 relative">
+        <section id="references" className="py-32 px-6 bg-[#0a0214] border-t border-purple-900/40 relative">
             <div className="max-w-5xl mx-auto space-y-16">
                 <div className="text-center space-y-4">
-                    <span className="font-label text-primary font-bold tracking-[0.3em] uppercase text-xs block">References</span>
-                    <h2 className="font-headline text-4xl md:text-6xl font-black text-stone-900 leading-[1.1]">Sources & Further Reading</h2>
+                    <span className="font-label text-purple-400 font-bold tracking-[0.3em] uppercase text-xs block">References</span>
+                    <h2 className="font-headline text-4xl md:text-6xl font-black text-white leading-[1.1]">Sources & Further Reading</h2>
                 </div>
                 
                 <div className="space-y-6">
                     {referencesList.map((ref, i) => (
-                        <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow group">
+                        <div key={i} className="bg-purple-950 p-8 rounded-2xl shadow-sm border border-purple-800 hover:shadow-lg transition-shadow group">
                             <a 
                                 href={ref.url} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="flex items-start gap-4"
                             >
-                                <span className="material-symbols-outlined text-stone-300 group-hover:text-primary transition-colors flex-shrink-0 mt-1">open_in_new</span>
-                                <p className="text-stone-600 font-medium leading-relaxed group-hover:text-stone-900 transition-colors">
+                                <span className="material-symbols-outlined text-purple-600 group-hover:text-purple-400 transition-colors flex-shrink-0 mt-1">open_in_new</span>
+                                <p className="text-purple-300 font-medium leading-relaxed group-hover:text-white transition-colors">
                                     {ref.text}
                                 </p>
                             </a>

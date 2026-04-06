@@ -14,8 +14,14 @@ const SanctuaryGrid: React.FC = () => {
             label: "Experienced emotional distress.",
             description: "According to NYAS (2015), while 97.4% consider religion important, 26% experience deep emotional distress.",
             icon: "clinical_notes",
-            theme: "bg-surface-container-high",
-            col: "md:col-span-2"
+            theme: "bg-blue-900 border border-blue-800",
+            col: "md:col-span-2",
+            iconBg: "bg-blue-800",
+            iconColor: "text-blue-300",
+            titleColor: "text-blue-300",
+            valColor: "text-blue-50",
+            labelColor: "text-blue-100",
+            descColor: "text-blue-200"
         },
         {
             title: "Suri-Nilay",
@@ -23,8 +29,14 @@ const SanctuaryGrid: React.FC = () => {
             label: "Spiritual Maturity.",
             description: "Holiness grows through conversion, repentance, and starting again—not moral faultlessness.",
             icon: "auto_stories",
-            theme: "bg-primary/5",
-            col: "md:col-span-1"
+            theme: "bg-sadness/40 border border-blue-400",
+            col: "md:col-span-1",
+            iconBg: "bg-blue-950",
+            iconColor: "text-white",
+            titleColor: "text-white",
+            valColor: "text-white",
+            labelColor: "text-blue-50",
+            descColor: "text-blue-100"
         },
         {
             title: "Double Life",
@@ -32,8 +44,14 @@ const SanctuaryGrid: React.FC = () => {
             label: "Socially Prescribed Perfection.",
             description: "Admitting a mental struggle is often seen as a sign of weak faith, leading many to hide their pain.",
             icon: "visibility_off",
-            theme: "bg-stone-50 border border-stone-200/50",
-            col: "md:col-span-1"
+            theme: "bg-blue-800 border border-blue-700",
+            col: "md:col-span-1",
+            iconBg: "bg-blue-900",
+            iconColor: "text-blue-300",
+            titleColor: "text-blue-300",
+            valColor: "text-blue-50",
+            labelColor: "text-blue-100",
+            descColor: "text-blue-200"
         },
         {
             title: "The Mercy Model",
@@ -41,8 +59,14 @@ const SanctuaryGrid: React.FC = () => {
             label: "Pastoral Accompaniment.",
             description: "The Church is called to accompany the youth with mercy, understanding, and holistic pastoral care.",
             icon: "partner_exchange",
-            theme: "bg-stone-900 text-white",
-            col: "md:col-span-2"
+            theme: "bg-blue-950 text-white border border-blue-900",
+            col: "md:col-span-2",
+            iconBg: "bg-blue-900",
+            iconColor: "text-sadness",
+            titleColor: "text-blue-400",
+            valColor: "text-sadness",
+            labelColor: "text-white",
+            descColor: "text-blue-300"
         }
     ];
 
@@ -67,12 +91,12 @@ const SanctuaryGrid: React.FC = () => {
     }, []);
 
     return (
-        <section id="mental-health" className="py-32 px-6 bg-stone-50 relative border-y border-stone-200/40">
+        <section id="mental-health" className="py-32 px-6 bg-blue-950 relative border-y border-blue-900/40">
             <div className="max-w-7xl mx-auto">
                 <div ref={headerRef} className="text-center mb-24 max-w-4xl mx-auto space-y-6">
-                    <span className="font-label text-primary font-bold tracking-[0.3em] uppercase text-xs block">Suri-Nilay: Judge & Discern</span>
-                    <h2 className="font-headline text-4xl md:text-6xl font-black text-stone-900 leading-[1.1]">Bridging the gap between Scripture & Science.</h2>
-                    <p className="text-stone-500 text-xl md:text-2xl font-medium leading-relaxed">
+                    <span className="font-label text-blue-300 font-bold tracking-[0.3em] uppercase text-xs block drop-shadow-sm">Suri-Nilay: Judge & Discern</span>
+                    <h2 className="font-headline text-4xl md:text-6xl font-black text-blue-50 leading-[1.1] drop-shadow-md">Bridging the gap between Scripture & Science.</h2>
+                    <p className="text-blue-200 text-xl md:text-2xl font-medium leading-relaxed">
                         Moving away from a "performance" model toward a model of growth, vulnerability, and forgiveness.
                     </p>
                 </div>
@@ -82,19 +106,19 @@ const SanctuaryGrid: React.FC = () => {
                         <div 
                             key={index} 
                             ref={(el) => { if (el) cardsRef.current[index] = el; }}
-                            className={`${card.theme} ${card.col} rounded-3xl p-10 flex flex-col justify-between group overflow-hidden relative min-h-[420px] transition-all hover:scale-[1.02] duration-500 shadow-xl shadow-stone-200/50`}
+                            className={`${card.theme} ${card.col} rounded-3xl p-10 flex flex-col justify-between group overflow-hidden relative min-h-[420px] transition-all hover:scale-[1.02] duration-500 shadow-xl shadow-blue-950/80`}
                         >
                             <div className="relative z-10 flex flex-col items-start gap-4 h-full">
-                                <div className={`w-14 h-14 ${card.theme === 'bg-stone-900 text-white' ? 'bg-stone-800' : 'bg-white'} rounded-full flex items-center justify-center mb-6 shadow-sm`}>
-                                    <span className={`material-symbols-outlined ${card.theme === 'bg-stone-900 text-white' ? 'text-primary' : 'text-stone-400'} text-3xl`}>{card.icon}</span>
+                                <div className={`w-14 h-14 ${card.iconBg} rounded-full flex items-center justify-center mb-6 shadow-sm`}>
+                                    <span className={`material-symbols-outlined ${card.iconColor} text-3xl`}>{card.icon}</span>
                                 </div>
                                 <div className="space-y-4 flex-grow">
                                     <div className="flex flex-col gap-1">
-                                        <span className={`font-label uppercase tracking-widest text-[10px] font-black ${card.theme === 'bg-stone-900 text-white' ? 'text-stone-400' : 'text-stone-400'}`}>{card.title}</span>
-                                        <h3 className={`font-headline text-4xl md:text-5xl font-black ${card.theme === 'bg-stone-900 text-white' ? 'text-primary' : 'text-stone-900'}`}>{card.value}</h3>
+                                        <span className={`font-label uppercase tracking-widest text-[10px] font-black ${card.titleColor}`}>{card.title}</span>
+                                        <h3 className={`font-headline text-4xl md:text-5xl font-black ${card.valColor}`}>{card.value}</h3>
                                     </div>
-                                    <p className={`font-bold text-lg md:text-xl leading-tight ${card.theme === 'bg-stone-900 text-white' ? 'text-stone-100' : 'text-stone-800'}`}>{card.label}</p>
-                                    <p className={`text-base md:text-lg leading-relaxed ${card.theme === 'bg-stone-900 text-white' ? 'text-stone-400' : 'text-stone-500'}`}>{card.description}</p>
+                                    <p className={`font-bold text-lg md:text-xl leading-tight ${card.labelColor}`}>{card.label}</p>
+                                    <p className={`text-base md:text-lg leading-relaxed ${card.descColor}`}>{card.description}</p>
                                 </div>
                             </div>
                             
