@@ -11,10 +11,10 @@ const Footer: React.FC = () => {
                     </p>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 text-left items-start pb-20 border-b border-stone-200/60 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center pb-20 border-b border-stone-200/60 w-full max-w-4xl mx-auto">
                     <div className="space-y-6">
-                        <span className="font-label uppercase tracking-widest text-primary font-black">Submitted By</span>
-                        <div className="space-y-1.5 text-stone-800 text-sm md:text-base font-bold">
+                        <span className="font-label uppercase tracking-widest text-primary font-black text-xs">Submitted By</span>
+                        <div className="space-y-2 text-stone-900 text-base font-bold">
                             <p>Atienza, Lorenzo A.</p>
                             <p>Berano, R Jay V.</p>
                             <p>Caoile, Yuan Miguel G.</p>
@@ -22,9 +22,9 @@ const Footer: React.FC = () => {
                             <p>Villano, Jean Carla M.</p>
                         </div>
                     </div>
-                    <div className="space-y-6">
-                        <span className="font-label uppercase tracking-widest text-primary font-black">Presented To</span>
-                        <div className="space-y-1.5 text-stone-800 text-sm md:text-base font-bold">
+                    <div className="space-y-6 border-t md:border-t-0 md:border-l border-stone-200/60 pt-16 md:pt-0">
+                        <span className="font-label uppercase tracking-widest text-primary font-black text-xs">Presented To</span>
+                        <div className="space-y-2 text-stone-900 text-base font-bold">
                             <p>Sir Rafael F. Fernando</p>
                             <p>Department of Theology</p>
                             <p>De La Salle University – Manila</p>
@@ -35,11 +35,9 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col md:flex-row justify-between items-center w-full gap-8">
-                    <p className="tracking-widest uppercase font-black">© 2026 LCFAITH. All rights reserved.</p>
-                    <div className="flex gap-10 tracking-widest uppercase font-black">
-                        <a className="hover:text-primary transition-colors underline underline-offset-8 select-none cursor-pointer" onClick={() => alert('Add link to Privacy Policy')}>Privacy</a>
-                        <a className="hover:text-primary transition-colors underline underline-offset-8 select-none cursor-pointer" onClick={() => alert('Add link to Contact')}>Contact</a>
-                        <a className="hover:text-primary transition-colors underline underline-offset-8 select-none" href="#references">Resources</a>
+                    <p className="tracking-widest uppercase font-black text-[10px]">© 2026 LCFAITH. All rights reserved.</p>
+                    <div className="flex gap-10 tracking-widest uppercase font-black text-[10px]">
+                        <a href="#references" className="hover:text-amber-500 transition-colors select-none">Resources</a>
                     </div>
                 </div>
             </div>

@@ -25,7 +25,7 @@ const Manifesto: React.FC = () => {
                     <img 
                         alt="Deconstructing Performance" 
                         className="relative rounded-2xl w-full aspect-[4/5] object-cover shadow-2xl scale-95 group-hover:scale-100 transition-transform duration-700 pointer-events-none"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvU7NRA7Zs4K0A_CfqBioQJdihxuTVrRFWHCWuyW6oJQ9v_eDOZOXqwpoyloGX5xwEAMzWhsmpOd3ApnkWr0kMPISMCQoLBWMbL-bm55Xt4OPDSClShC_-7c84bIe0Jibh5ttQONFp-eZLIbQRcheBJob8OecnbkEVVbI7yL-mrKpQRIwUUxzQ1suD-vGhklSy5GxDOcM7_XHXGhIxu2SYe4GXuXj6vY2yUs9j4wOntAskKM2bnlHaodvvUL18nPsuZten9NVOu6wX" 
+                        src="/double-sided.png" 
                     />
                     <div className="absolute -bottom-8 -right-8 bg-purple-900/90 p-8 rounded-2xl backdrop-blur-md shadow-2xl max-w-xs border border-purple-800 hidden lg:block">
                         <p className="font-headline font-bold text-white mb-2">Religious Scrupulosity</p>

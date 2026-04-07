@@ -52,21 +52,6 @@ const SanctuaryGrid: React.FC = () => {
             valColor: "text-blue-50",
             labelColor: "text-blue-100",
             descColor: "text-blue-200"
-        },
-        {
-            title: "The Mercy Model",
-            value: "Solidarity",
-            label: "Pastoral Accompaniment.",
-            description: "The Church is called to accompany the youth with mercy, understanding, and holistic pastoral care.",
-            icon: "partner_exchange",
-            theme: "bg-blue-950 text-white border border-blue-900",
-            col: "md:col-span-2",
-            iconBg: "bg-blue-900",
-            iconColor: "text-sadness",
-            titleColor: "text-blue-400",
-            valColor: "text-sadness",
-            labelColor: "text-white",
-            descColor: "text-blue-300"
         }
     ];
 
@@ -101,7 +86,7 @@ const SanctuaryGrid: React.FC = () => {
                     </p>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {dataCards.map((card, index) => (
                         <div 
                             key={index} 
@@ -121,12 +106,6 @@ const SanctuaryGrid: React.FC = () => {
                                     <p className={`text-base md:text-lg leading-relaxed ${card.descColor}`}>{card.description}</p>
                                 </div>
                             </div>
-                            
-                            <img 
-                                alt={card.title} 
-                                className={`absolute bottom-[-10%] right-[-10%] w-2/3 h-2/3 object-contain opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none`}
-                                src={card.icon === 'groups' ? 'https://lh3.googleusercontent.com/aida-public/AB6AXuCcbCMGNLmpB48iP_a-aITKtNmh8cVZKB4Bjo1GibDZ_Il9WgKy0L5rcCzpXSF-YQrM8Dz5_rre-fFRNDC3x8pratV-Zg65x1XRK4JDi_Tuuaq5XnKLD2fi1PYKShqq1xPo4W7YU6pxCsl4CWpBPYv3nC6gxLE7O8nWqVaFDDl_GTHOiscBsOAPHu8DwVxXDSx-8UYa47LWSdsw8GGnzx57upHPxvKxgIReP2wkhdWoLC7BEJzTTwh_KDAY_zFjQdueYz55-daod4yi' : ''} 
-                            />
                         </div>
                     ))}
                 </div>
