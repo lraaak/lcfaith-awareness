@@ -25,17 +25,25 @@ const Manifesto: React.FC = () => {
                     <img 
                         alt="Deconstructing Performance" 
                         className="relative rounded-2xl w-full aspect-[4/5] object-cover shadow-2xl scale-95 group-hover:scale-100 transition-transform duration-700 pointer-events-none"
-                        src="/double-sided.png" 
+                        src="/inside_out2.jpg" 
                     />
-                    <div className="absolute -bottom-8 -right-8 bg-purple-900/90 p-8 rounded-2xl backdrop-blur-md shadow-2xl max-w-xs border border-purple-800 hidden lg:block">
-                        <p className="font-headline font-bold text-white mb-2">Religious Scrupulosity</p>
-                        <p className="text-purple-200 text-sm leading-relaxed italic">"A psychological struggle where an individual is so obsessed with being 'morally perfect' that they experience constant anxiety."</p>
+                    
+                    {/* Religious Scrupulosity Card */}
+                    <div className="absolute -bottom-8 -right-8 bg-purple-900/90 p-6 rounded-2xl backdrop-blur-md shadow-2xl max-w-xs border border-purple-800 hidden lg:block z-20">
+                        <p className="font-headline font-bold text-white text-sm mb-1 uppercase tracking-wider">Religious Scrupulosity</p>
+                        <p className="text-purple-200 text-xs leading-relaxed italic opacity-90">"A psychological struggle where an individual is so obsessed with being 'morally perfect' that they experience constant anxiety."</p>
+                    </div>
+
+                    {/* Image Attribution Overlay */}
+                    <div className="absolute bottom-6 left-10 md:left-14 opacity-30 flex items-center gap-2 select-none pointer-events-none z-10 transition-all group-hover:bottom-4 group-hover:left-8">
+                        <span className="w-4 h-[1px] bg-purple-400"></span>
+                        <p className="text-purple-200 text-[8px] uppercase tracking-[0.2em] font-bold">Disney·Pixar · Inside Out</p>
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 space-y-12">
                     <div className="space-y-4">
                         <span className="font-label text-fear font-bold tracking-[0.3em] uppercase text-xs block">The Context</span>
-                        <h2 className="font-headline text-4xl md:text-7xl font-black text-purple-50 mb-8 leading-[1.1]">The Perfection Trap.</h2>
+                        <h2 className="font-headline text-4xl md:text-6xl font-black text-purple-50 mb-8 leading-[1.1]">The Perfection Trap.</h2>
                     </div>
                     <div className="space-y-8 text-purple-200 text-lg md:text-xl leading-relaxed font-normal">
                         <p>Many passionate young believers face overwhelming pressure due to religious group norms and an unrealistic drive for perfectionism.</p>
